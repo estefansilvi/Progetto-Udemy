@@ -1,0 +1,342 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header{
+    background: #fff;
+    height: 100px;
+    padding: 0 38px;
+    position: relative;
+    z-index: 1010;
+    box-shadow: 0 5px 5px #888888;
+}
+
+.navbar{
+    height: 100%; 
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-udemy{
+   width: 7%;
+}
+.udemy{
+    max-width: 100%;
+    height: auto;
+}
+
+
+.categorie{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    cursor: pointer;
+}
+.categorie span{
+    font-weight: 500;
+    font-size: 15px;
+}
+.categorie span:hover{
+    color: blue;
+}
+.hover-categorie{
+    display: none;
+    width: 826px;
+    position: absolute;
+    top: 120%;
+    border: 1px solid lightgrey;
+    background-color: white;
+    box-shadow: 0 5px 10px grey;
+}
+.elenco{
+    list-style-type: none;
+    float: left;
+}
+.elenco ul{
+    list-style-type: none;
+    padding: 20px;
+}
+.elenco ul li{
+    margin-bottom: 10px;
+}
+.categorie:hover .hover-categorie{
+    display: block;
+}
+
+
+.search-bar{
+    width: 40%;
+    height: 55%;
+    border: 1px solid black;
+    border-radius: 45px;
+    display: flex;
+    align-items: center;
+}
+.search{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+   
+}
+.search .lente{
+     width: 30%;
+    margin: 20px;
+    cursor: pointer;
+ }
+
+
+.business{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    cursor: pointer;
+}
+.business span{
+    font-weight: 500;
+    font-size: 12px;
+    white-space: nowrap;
+}
+.business span:hover{
+    color:darkblue;
+}
+.hover-business{
+    display: none;
+    position: absolute;
+    top: 110%;
+    left: 32%;
+    width: 340px;
+    border: 1px solid lightgrey;
+    background-color: white;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 5px 10px grey;
+}
+.hover-business p{
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.hover-business button{
+    border: 1px solid black;
+    background-color: #101010;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+}
+.business:hover .hover-business{
+    display: block;
+}
+
+
+.teach-udemy{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    cursor: pointer;
+}
+.teach-udemy span{
+    font-weight: 500;
+    font-size: 12px;
+    white-space: nowrap;
+}
+.teach-udemy span:hover{
+    color:darkblue;
+}
+.hover-teach{
+    display: none;
+    position: absolute;
+    top: 110%;
+    left: 60%;
+    width: 340px;
+    border: 1px solid lightgrey;
+    background-color: white;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 5px 10px grey;
+}
+.hover-teach p{
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.hover-teach button{
+    border: 1px solid black;
+    background-color: #101010;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+}
+.teach-udemy:hover .hover-teach{
+    display: block;
+}
+.carrello img{
+    width: 30px;
+    margin: 0 15px 0 0;
+    cursor: pointer;
+}
+
+.accedi{
+  border: 1px solid black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color: white;
+}
+.accedi:hover{
+    background-color: lightgrey;
+}
+
+.registrati{
+    border: 1px solid black;
+    background-color: #101010;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+.registrati:hover{
+    background-color: black;
+}
+
+.world{
+border: 1px solid black;
+height: 54px;
+width: 70px;
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+margin: 0 4px;
+background-color: white;
+}
+.world img{
+    width: 25px; 
+}
+.world:hover{
+    background-color: lightgrey;
+}
+
+/* fine Header */
+
+.hero-udemy{
+    padding: 100px;
+    background-image: url("img/hero.png");
+    background-repeat: no-repeat;
+    font-family: ;
+}
+.offerta-stagione{ 
+    width: 490px;
+    text-align: left;
+    padding: 20px;
+    border: 1px solid lightgrey;
+    box-shadow: ;
+    background-color: white;
+    box-shadow: 0 5px 10px grey;
+}
+.offerta-stagione h1{
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+.offerta-stagione p{
+    font-size: 18px;
+}
+
+
+
+footer{
+    background-color: #1c1d1f;
+    padding: 20px;
+}
+.footer-part-one{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-part-one .elenco{
+    float: left;
+}
+.footer-part-one .elenco ul{
+    list-style-type: none;
+    color: white;
+    padding: 20px 20px 20px 0;
+}
+.left, .right{
+    display: flex;
+    justify-content: start
+}
+.left{
+    width: 70%;
+    font-size: 14px;
+}
+.left .elenco{
+    width: 40%;
+}
+.right{
+    width: 10%;
+}
+.right button{
+height: 50px;
+border: 1px solid white;
+background-color: #1c1d1f;
+color: white;
+padding: 16px 32px;
+text-align: center;
+text-decoration: none;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 15px;
+margin: 4px 2px;
+cursor: pointer;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.right button img{
+    width: 35%;  
+    margin-right: 15px;
+}
+.right button:hover{
+    background-color: #2f3033 ;
+}
+
+.footer-part-two{
+    margin: 20px 0;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.footer-part-two img{
+    width: 8%;
+}
+.footer-part-two span{
+    color: white;
+}
+
